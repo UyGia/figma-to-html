@@ -92,11 +92,81 @@ a {
   margin-left: 70px;
 }
 
-/* -------img gai---------- */
-.media-block img {
+/* -------img gai---------- xử lí ảnh khác nên code riêng*/
+.hero .media-block .avatar {
   width: 470px;
   height: 685px;
-  flex-shrink: 0;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 20px;
+}
+
+/* -------------hero--------- */
+.hero {
+  padding: 56px;
+  background-color: azure;
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .content-block {
+  height: 52%;
+}
+
+.hero .hero-summary {
+  width: 320px;
+  padding: 24px;
+  position: absolute;
+  bottom: 30px;
+  right: -95px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary .item {
+  display: flex;
+}
+
+.hero-summary .ico {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 229, 232);
+}
+.hero-summary .Marketing {
+  background: rgb(243, 243, 182);
+}
+
+.hero-summary .info {
+  /* display: flex; */
+  margin-left: 16px;
+}
+.hero-summary .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 186%;
+}
+.hero-summary .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 167%;
+}
+/* ------hero right-------- */
+.hero .content-block {
+  width: calc(100% - 970px);
+  margin: 0, 0, auto, auto;
 }
