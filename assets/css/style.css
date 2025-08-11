@@ -91,3 +91,12 @@ a {
 .header .action {
   margin-left: 70px;
 }
+
+/* -------img gai---------- */
+.media-block img {
+  width: 470px;
+  height: 685px;
+  flex-shrink: 0;
+  background-size: cover;
+  border-radius: 20px;
+}
